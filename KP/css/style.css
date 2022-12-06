@@ -1,0 +1,108 @@
+h1,h2{
+	font-family: Pacifico;
+}
+#a1{
+    font-family: Pacifico;
+}
+
+td,th{
+    border: 2px solid black;
+}
+.Blok1{
+ background-color: #2F4454;
+ height: 240px;
+ font-family: 'Caveat', cursive;
+ color: bisque;
+}
+.Blok2{
+ background-color: #b87c8a;
+ height: 240px;
+ font-family: 'Caveat', cursive;
+ margin-top: 10px;
+ color: darkblue;
+}
+.Blok3{
+background-color: #DA7B93;
+height: 240px;
+font-family: 'Caveat', cursive;
+margin-top: 15px;
+color: greenyellow;
+}
+.Blok4{
+
+background-color: #376E6F;
+height: 240px;
+
+margin-top: 15px;
+}
+.Zagol{
+        font-size: 12pt;
+        text-align: center;
+        border: 1px solid black;
+        float: right;
+        margin-top: 214px;
+        font-size: 120%;
+        font-family: 'Fira Sans', sans-serif;
+        position: relative;
+        
+}
+#cup4{
+    background-color: green;
+    color: black;
+}
+#cup1{
+    background-color: yellow;
+    color: rgb(9, 144, 4);
+}
+#cup2{
+    background-color: wheat;
+    color: black;
+}
+#cup3{
+    background-color: red;
+    color: rgb(68, 226, 43);
+}
+
+
+@media (min-width: 1200px) {
+    .Main{display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .img{
+        margin-top: -300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .Main{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+  
+}
+@media (min-width: 992px) and (max-width: 1200px){
+ .Main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+ }
+ .Blok4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    
+}
+.img{
+    text-align: center;
+}
+}
+
+
+@media (max-width: 768px){
+    .Main{
+        display: block;
+    }
+    .img{
+        margin-top: -250px;
+    }
+}
